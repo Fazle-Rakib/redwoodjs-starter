@@ -1,7 +1,10 @@
 export const QUERY = gql`
   query ArticlesQuery {
-    articles {
+    articles: posts {
       id
+      title
+      body
+      createdAt
     }
   }
 `
